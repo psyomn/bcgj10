@@ -192,7 +192,8 @@ Narrator in straight text
     * Do what you need to do.
     * Take the exit.
   * [ rewind | take the exit ]
-    * You take as long as I need. I've got as much time as you've got.
-    * Substantially more, truth be told.
-    * I think,
+    * I think, it's important to value time, but only insofar as that time itself is valuable.
+    * Is this remaining time valuable to you?
+    * You take as long as I need to figure that out. I've as much time as you do.
+    * Truth be told, substantially more.
   * [ take the exit ]
