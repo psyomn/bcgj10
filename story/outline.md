@@ -14,9 +14,10 @@ Narrator in straight text
   * a single door on the wall, no windows
 
 #### Content
-  * Well, hello princess. Nice of you to join me again.
+  * Well, hello princess. Nice of you to join me.
   * Let's get the formalities out of the way, yeah?
   * [ ... | check room | check items ]
+    * -- pending room layout / floor plan
   * The strong, silent type, huh?
   * I can work with that.
   * You're smart enough to have figured this out
@@ -25,14 +26,36 @@ Narrator in straight text
   * The key to getting out is in this room.
   * [ where is the key? | why am I here? | no keyhole ]
     * [ where is the key? ]
-    * I expected a bit more from you.
-    * We did, after all, just go over this.
-  --* The key to your exit is... wait for it.
-  --* In this room.
-  --* [ why am I here? ]
-  --*
-  --* [ no keyhole ]  
-  --* Well, that's embarrassing. Let me fix that for you.
+      * I expected a bit more from you.
+      * We did, after all, just go over this.
+      * The key to your exit is... wait for it.
+      * In this room.
+    * [ why am I here? ]
+      * Influence.
+      * Are you familiar with the Stanford Prison Experiment?
+      * [ yes | no | ... ]
+        * [ yes ]
+          * Will wonders never cease?
+        * [ no | ... ]
+          * It's the kind of thing you couldn't do today, not in the light, anyways.
+          * It's funny how recently that was.
+          * Anyway, simple experiment.
+          * Students set up a mock prison.
+          * Some students were prisoners and others were guards.
+          * The professor running the experiment put himself in as warden.
+          * In retrospect, it's fairly unsurprising how quickly it
+        * Standford Prison Experiment.
+        * Abu Ghraid.
+        * Good ole Chuck Manson's acolytes scrawling on walls in their victim's blood.
+        * Influence goes a long way.
+        * It's interesting, but it doesn't quite wash.
+        * Not every ghetto kid is a drug dealing murderer...
+        * Not every politician is a backscratching prostitute for hire...
+        * Not every abused child goes on to abuse their own child...
+        * At some point you have be responsible for the influence you receive
+        * But also for the influence you exercise.
+    * [ no keyhole ]  
+      * Well, that's embarrassing. Let me fix that for you.
   * [ rewind ]
   * Well, go ahead, give me a hand. I'll fix that right up for you.
 
@@ -43,9 +66,9 @@ Narrator in straight text
   * the room remains the same
 
 #### Content
-  * hello princess... nice of you to join me
-  * walk through a modified version of the previous speech
-  * close, but not quite perfect
+  * Well, hello princess. Nice of you to join me.
+  * Formalities out of the way, yes?
+
   * [ interrupt | check room item | check room item ]
   * influence, I hear you're a fan
   * it's curious, what we think of as power
@@ -117,3 +140,7 @@ Narrator in straight text
   * then all the distractions... a white room with a gun prominently in the middle of the floor
   * [ take the exit ]
   * You take as long as I need. I've got as much time as you've got. Substantially more, truth be told.
+
+## General Collection
+  * I know, you're think... he can't possible know that.
+  * You're here. Somebody knows.
