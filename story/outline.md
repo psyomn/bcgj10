@@ -93,59 +93,81 @@ Narrator in straight text
   * It seems ridiculous to expect you to solve an incomplete puzzle, doesn't it?
   * [ rewind ]
 
-
-
-
 ## Segment 3
 
-  * hello princess... nice of you to join me
-  * [ shut up | what do you want? ]
-  * It's really losing its charm already, isn't it?
-  * I agree. It's a bit tired.
-  * Doesn't matter. We're well on our way anyway.
-  * What brings someone to a place like this?
-  * What brings someone to bring someone to a place like this?
-  * Take a minute. Consider it.
-  * What have you done that would bring you to a place like this?
-  * What have you done that would bring someone to bring you to a place like this?
-  * I know what you're thinking... he can't possible know that.
-  * You're here. Somebody knows.  
-  * take a look around
-  * I meant what I said, the key to your escape is in this room
-
+  * Hello, princess. Nice of you to join me.
+  * [ shut up | what do you want? | ... ]
+    * [ shut up ]
+      * It's really losing its charm already, isn't it?
+      * I agree. It's a bit tired.
+      * Doesn't matter. We're well on our way anyway.
+    * [ what do you want? ]
+      * What brings someone to a place like this?
+      * What brings someone to bring someone to a place like this?
+      * Take a minute. Consider it.
+      * What have you done that would bring you to a place like this?
+      * What have you done that would bring someone to bring you to a place like this?
+      * I know what you're thinking... he can't possible know that.
+      * You're here. So, somebody knows.  
+    * [ ... ]
+  * Now, if you don't mind, we haven't all day.
+  * Please, feel free to figure it all out.
+  * [ examine objects ]
+  * It's here and, quite frankly, I'm a little disappointed it's taking you so long.
   * [ rewind ]
 
 ## Segment 4
 
-  * it's my little reality, you'd think I'd be better at this
-  * it's so frustrating not being sure, you know
-  * so much of it is in my head, I already get it.
-  * I don't know what you get.
-  * maybe you already get it.
-  * maybe, it's just you trying to fuck with me...
+#### Scene
+  * back to the original scene
+  * added contents have been removed
+  * the key hole has been removed as well
 
-  * [ rewind ]
+#### Content
+  * It's my little reality.
+  * You think I'd be better at this.
+  * It's so aggravating not being sure, you know.
+  * Just not quite fucking getting it.
+  * So much of it is in my head that it is obvious.
+  * I already know how this ends.
+  * What I don't know is what's in your head.
+  * Do you just not understand?
+  * Don't you get it?
+  * Then again, maybe you do?
+  * Maybe.... maybe you're just fucking with me...
+  * How many hoops will I jump through?
+  * How much of your work will I do for you?
+  * Maybe I did over complicate it.
+  * It's hard to say.
+  * Either way, we should really sort that out.
+  * [ rewind ] >> forced / timed by game
+  * Don't bother. I'll do it myself.
 
 ## Segment 5
 
-  * hello princess... nice of you to join me
-  * reset back to the first segment, the original room, missing the key hole
+#### Scene
+  * the entire room has been stripped back
+  * a single table with wooden box on it, closed
+  * the box opens to a red velvet lined case
+  * it contains a gun   
 
-
+#### Content
+  * I've decided it wasn't me, it was you.
+  * So, I've pared things back a little.
+  * Go on. It's there just for you.
+  * [ what's on the other side of the door | examine box ]
+    * [ what's on the other side of the door ]
+     * nothing you need to worry about just yet
+    * [ examine box ]
+      * Congratulations, you've found the key that leads to your exit.
+      * Hurry now, before the excitement fades.
   * [ rewind ]
 
 ## Segment 6
 
-  * I've decided it wasn't me, it was you
-  * So, I've stripped things down a little
-  * [ perform action | ask question ]
-  * perform action >> reveals box [ open box ]
-  * reveals the gun
-  * Congratulations, you've found the key that leads to your exit.
-  * Hurry now, before the excitement fades.
-  * [ rewind ]
+#### Scene
 
-## Segment 7
+#### Content
 
   * You didn't think it'd be that easy, did you?
   * the room has been stripped down
