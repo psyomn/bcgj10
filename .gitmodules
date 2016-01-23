@@ -1,0 +1,3 @@
+[submodule "webstory-engine"]
+	path = webstory-engine
+	url = git@github.com:iiyo/WebStory-Engine.git
