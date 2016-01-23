@@ -59,6 +59,8 @@ Character actions are noted in [].
 ## Segment 5
 
 * hello princess... nice of you to join me
+* reset back to the first segment, the original room, missing the key hole
+
 
 * [ rewind ]
 
