@@ -34,3 +34,22 @@ One weapon - Many uses... how is this explained.
 Power as coercion. That's the weapon and that is why our protagonist is in the room. That is why he is left with precious few options, repeat forever or die.
 
 The narrator modifies the scenario and scene on each repeat until the final repeat.
+
+
+## Functional Mechanics:
+
+Illustrations:
+* matched to story beats
+* update with the story
+* leads to a limited amount of scenes that can have modifications across the scenes
+
+Audio:
+* narrator accompanying the story / Illustrations
+* music soundtrack
+* music is both an accompaniment for mood and audible cue that we've restarted
+
+Game Mechanics:
+* branch driven or mouse click selection
+* needs to be determined to wrap story around it
+* in either case it can exist simultaneously or trigger narrator audio
+* some written text to supplement audio
