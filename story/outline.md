@@ -8,12 +8,12 @@ Narrator in straight text
 
 ## Segment 1
 
-  #### Scene
+#### Scene
   * small, enclosed room
   * minimal furniture and decor
   * a single door on the wall, no windows
 
-  #### Content
+#### Content
   * Well, hello princess. Nice of you to join me again.
   * Let's get the formalities out of the way, yeah?
   * [ ... | check room | check items ]
@@ -24,9 +24,9 @@ Narrator in straight text
   * There is, of course, only one way out.
   * The key to getting out is in this room.
   * [ where is the key? | why am I here? | no keyhole ]
-  --* [ where is the key? ]
-  --* I expected a bit more from you.
-  --* We did, after all, just go over this.
+    * [ where is the key? ]
+    * I expected a bit more from you.
+    * We did, after all, just go over this.
   --* The key to your exit is... wait for it.
   --* In this room.
   --* [ why am I here? ]
@@ -38,11 +38,11 @@ Narrator in straight text
 
 ## Segment 2
 
-  #### Scene
+#### Scene
   * the door now has a key hole on it
   * the room remains the same
 
-  ### Content
+#### Content
   * hello princess... nice of you to join me
   * walk through a modified version of the previous speech
   * close, but not quite perfect
