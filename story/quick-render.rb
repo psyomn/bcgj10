@@ -14,12 +14,28 @@ if ARGV.count < 1
   exit
 end
 
+module StringFeatures
+  refine String do
+    def underscore
+      self.gsub(/\s/, '_')
+    end
+  end
+end
+
 class ScriptRenderer < Redcarpet::Render::Base
+  using StringFeatures
 
   def header(text, header_level)
-    @header ||= 0
+    @header_count ||= true
 
-  end
+    if @header_count
+      puts "<scene id=\"\" comment=\"#{text.downcase.underscore}\">"
+    else
+      # This is crappy but will do for now
+      puts "</scene>"
+      puts "<scene id=\"\" comment=\"#{text.downcase.underscore}\">"
+    end
+  nil end
 
   def list_item(text, list_type)
     chr_actions = /^\[.*\]$/
@@ -27,11 +43,11 @@ class ScriptRenderer < Redcarpet::Render::Base
       # hero
       choices_xml = choices_xml_from_s(text)
       puts "Character choices: #{choices_xml}"
-      nil # required because the return value fucks shit up if it's not a string
     else
       # narator
       puts "<line s=\"e\"> #{text.strip} </line>"
     end
+    nil
   end
 
   private
