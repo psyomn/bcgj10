@@ -20,6 +20,17 @@ You are left in a room with a weapon...
 
 or an escape room:
 
-* one puzzle leads to another room, and gives you another weaponn
+* one puzzle leads to another room, and gives you another weapon
 * everything leads you to the final thing that you uncover, and you are finally
   free
+
+
+## Working Premise:
+
+A repeating time loop with an escape room that only has a single solution.
+
+One weapon - Many uses... how is this explained.
+
+Power as coercion. That's the weapon and that is why our protagonist is in the room. That is why he is left with precious few options, repeat forever or die.
+
+The narrator modifies the scenario and scene on each repeat until the final repeat.
