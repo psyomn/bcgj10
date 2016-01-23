@@ -95,6 +95,11 @@ Narrator in straight text
 
 ## Segment 3
 
+#### Scene
+  * added content, functional and decorative
+  * not clear on what this is just yet
+
+#### Content
   * Hello, princess. Nice of you to join me.
   * [ shut up | what do you want? | ... ]
     * [ shut up ]
@@ -166,23 +171,28 @@ Narrator in straight text
 ## Segment 6
 
 #### Scene
+  * progressive removal of elements on successive rewinds
+  * the box, the table, the door, all decorative elements
+  * ultimately a white room with a gun on the floor
 
 #### Content
 
   * You didn't think it'd be that easy, did you?
-  * the room has been stripped down
-  * the door and any furniture is gone
-  * all that is left are bare walls, a small table, and the box labelled key
-  * it is open with the gun visible inside
+  * I can assure you, whatever control you think you have in this situation is an illusion.
   * [ rewind | take the exit ]
-  * remove the box
-  * the gun sits naked on the table
+    * Oh. No. That didn't fix it.
+    * Maybe the next try? Perhaps?
+    * You could give it a go, of course.
+    * Or you could do what you know is right.
   * [ rewind | take the exit ]
-  * remove the table
-  * the gun sits on the floor of the empty room in front of the player
+    * Just do it!
+    * You wanted out. There's the exit.
+    * If someone was in the way of you getting out and you had that in your hand you do whatever you needed to do to get them out of your way.
+    * You're in the way.
+    * Do what you need to do.
+    * Take the exit.
   * [ rewind | take the exit ]
-  * then all the distractions... a white room with a gun prominently in the middle of the floor
+    * You take as long as I need. I've got as much time as you've got.
+    * Substantially more, truth be told.
+    * I think,
   * [ take the exit ]
-  * You take as long as I need. I've got as much time as you've got. Substantially more, truth be told.
-
-## General Collection
