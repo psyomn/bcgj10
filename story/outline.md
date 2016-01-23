@@ -44,8 +44,8 @@ Narrator in straight text
           * Some students were prisoners and others were guards.
           * The professor running the experiment put himself in as warden.
           * In retrospect, it's fairly unsurprising how quickly it
-        * Standford Prison Experiment.
-        * Abu Ghraid.
+        * Stanford Prison Experiment.
+        * Abu Ghraib.
         * Good ole Chuck Manson's acolytes scrawling on walls in their victim's blood.
         * Influence goes a long way.
         * It's interesting, but it doesn't quite wash.
@@ -68,15 +68,32 @@ Narrator in straight text
 #### Content
   * Well, hello princess. Nice of you to join me.
   * Formalities out of the way, yes?
-
-  * [ interrupt | check room item | check room item ]
-  * influence, I hear you're a fan
-  * it's curious, what we think of as power
-  * like shouting at me from you little room really makes any difference
-  * strengths, well, they can be our weapons.. they can also be our weaknesses
-  * they mark us
-  * you know, it occurs to me that I may have left out some critical pieces here
+  * [ interrupt | check door | ... ]
+    * [ check room item | ... ]
+      * The strong, silent type.
+      * I can work with that.
+      * So, you're trapped in a room, clearly at the mercy of the wrong type of person.
+      * There is only one way out and the key to getting out is in this room.   
+      * Influence. I hear you're a fan.
+      * It's curious what we do with it.
+    * [ interrupt ]
+      * Influence. I hear you're a fan.
+      * It's curious what we do with it.
+      * Like the notion that shouting at me is going to change how this goes.
+  * It's also curious what we do when our influence is subverted or, worse, completely undercut.
+  * How does it feel?
+  * [ go fuck yourself | let me out | ... ]
+    * [ go fuck yourself ]
+      * Very eloquent.
+    * [ ... ]
+      * Stoic in the face of adversity. Admirable. Really.
+    * [ let me out ]
+      * That rests with you. The exit is yours to take, not mine. Although...
+  * It occurs to me, that in my haste, I may have left out some critical pieces.
+  * It seems ridiculous to expect you to solve an incomplete puzzle, doesn't it?
   * [ rewind ]
+
+
 
 
 ## Segment 3
@@ -86,11 +103,17 @@ Narrator in straight text
   * It's really losing its charm already, isn't it?
   * I agree. It's a bit tired.
   * Doesn't matter. We're well on our way anyway.
+  * What brings someone to a place like this?
+  * What brings someone to bring someone to a place like this?
+  * Take a minute. Consider it.
+  * What have you done that would bring you to a place like this?
+  * What have you done that would bring someone to bring you to a place like this?
+  * I know what you're thinking... he can't possible know that.
+  * You're here. Somebody knows.  
   * take a look around
   * I meant what I said, the key to your escape is in this room
 
   * [ rewind ]
-
 
 ## Segment 4
 
@@ -122,7 +145,6 @@ Narrator in straight text
   * Hurry now, before the excitement fades.
   * [ rewind ]
 
-
 ## Segment 7
 
   * You didn't think it'd be that easy, did you?
@@ -142,5 +164,3 @@ Narrator in straight text
   * You take as long as I need. I've got as much time as you've got. Substantially more, truth be told.
 
 ## General Collection
-  * I know, you're think... he can't possible know that.
-  * You're here. Somebody knows.
