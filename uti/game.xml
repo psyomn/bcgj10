@@ -66,20 +66,25 @@
           </track>
         </audio>
 
+        <audio name="sfx" loop="false" fade="false">
+          <track title="rewind">
+            <source href="assets/sounds/RewindAudioTrigger.mp3" type="mp3" />
+          </track>
+        </audio>
+
     </assets>
     <scenes>
 
         <scene id="start">
-
             <trigger name="next_on_right" action="activate" />
             <trigger name="next_on_space" action="activate" />
             <trigger name="game_menu_key_trigger" action="activate" />
 
             <set asset="backgrounds" image="startroom" duration="0" />
-            <set asset="cecile" image="smile" duration="0" />
             <set asset="logo" image="logo" duration="0" />
             <set asset="music" track="legend" />
             <set asset="bgm" track="main-loop" />
+            <set asset="sfx" track="rewind" />
             <move asset="cecile" x="50%" y="100%" xAnchor="45%" yAnchor="100%" duration="0" />
             <move asset="tb_main" x="50%" y="90%" xAnchor="50%" yAnchor="100%" duration="0" />
             <move asset="logo" x="50%" y="50%" xAnchor="50%" yAnchor="50%" duration="0" />
@@ -113,6 +118,8 @@
       <set asset="backgrounds" image="seg_01" />
       <show asset="backgrounds" />
       <show asset="tb_main" duration="500" effect="slide" direction="top" />
+      <set asset="sfx" track="rewind" />
+
       <line s="e">
         Well, hello princess. Nice of you to
         join me. I was starting to wonder when
@@ -157,6 +164,18 @@
 
 
       <sub scene="segment_1_phase_1" />
+
+      <!-- Rewind stuff -->
+
+      <pause asset="bgm" />
+      <play asset="sfx" />
+      <flicker asset="backgrounds" duration="1000" times="4" opacity="1" />
+      <hide asset="backgrounds" duration="3000" />
+      <hide asset="tb_main" />
+      <show asset="black-curtain" duration="100" />
+      <wait />
+
+      <!-- End rewind stuff -->
 
       <goto scene="segment_2" />
     </scene>
@@ -273,6 +292,14 @@
     <!-- End Segment 1 -->
 
     <scene id="segment_2">
+      <break />
+
+      <set asset="bgm" track="main-loop" />
+      <play asset="bgm" />
+      <show asset="tb_main" />
+      <set asset="backgrounds" image="seg_02" />
+      <show asset="backgrounds" />
+
       <line s="e">
         Hello princess. Nice of you to join me.  I was starting to wonder when
         you'd come around.
@@ -570,6 +597,9 @@
         github.com/dandydeadkid, sound: https://soundcloud.com/Tanner_Howell,
         and programming: github.com/psyomn
       </line>
+    </scene>
+
+    <scene id="common_rewind">
     </scene>
 </scenes>
 </ws>
