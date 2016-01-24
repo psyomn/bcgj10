@@ -72,6 +72,51 @@
           </track>
         </audio>
 
+        <audio name="voices" loop="false" fade="false">
+          <track title="seg_101"> <source href="assets/sounds/voices/seg1/seg101.mp3" /> </track>
+          <track title="seg_102"> <source href="assets/sounds/voices/seg1/seg102.mp3" /> </track>
+          <track title="seg_103"> <source href="assets/sounds/voices/seg1/seg103.mp3" /> </track>
+          <track title="seg_110"> <source href="assets/sounds/voices/seg1/seg110.mp3" /> </track>
+          <track title="seg_120"> <source href="assets/sounds/voices/seg1/seg120.mp3" /> </track>
+          <track title="seg_121"> <source href="assets/sounds/voices/seg1/seg121.mp3" /> </track>
+          <track title="seg_122"> <source href="assets/sounds/voices/seg1/seg122.mp3" /> </track>
+          <track title="seg_123"> <source href="assets/sounds/voices/seg1/seg123.mp3" /> </track>
+          <track title="seg_124"> <source href="assets/sounds/voices/seg1/seg124.mp3" /> </track>
+          <track title="seg_130"> <source href="assets/sounds/voices/seg1/seg130.mp3" /> </track>
+          <track title="seg_131"> <source href="assets/sounds/voices/seg1/seg131.mp3" /> </track>
+
+          <track title="seg_200"> <source href="assets/sounds/voices/seg2/seg200.mp3" /> </track>
+          <track title="seg_210"> <source href="assets/sounds/voices/seg2/seg210.mp3" /> </track>
+          <track title="seg_211"> <source href="assets/sounds/voices/seg2/seg211.mp3" /> </track>
+          <track title="seg_212"> <source href="assets/sounds/voices/seg2/seg212.mp3" /> </track>
+          <track title="seg_213"> <source href="assets/sounds/voices/seg2/seg213.mp3" /> </track>
+          <track title="seg_220"> <source href="assets/sounds/voices/seg2/seg220.mp3" /> </track>
+          <track title="seg_230"> <source href="assets/sounds/voices/seg2/seg230.mp3" /> </track>
+          <track title="seg_240"> <source href="assets/sounds/voices/seg2/seg240.mp3" /> </track>
+
+          <track title="seg_300"> <source href="assets/sounds/voices/seg3/seg300.mp3" /> </track>
+          <track title="seg_310"> <source href="assets/sounds/voices/seg3/seg310.mp3" /> </track>
+          <track title="seg_320"> <source href="assets/sounds/voices/seg3/seg320.mp3" /> </track>
+          <track title="seg_330"> <source href="assets/sounds/voices/seg3/seg330.mp3" /> </track>
+          <track title="seg_340"> <source href="assets/sounds/voices/seg3/seg340.mp3" /> </track>
+          <track title="seg_350"> <source href="assets/sounds/voices/seg3/seg350.mp3" /> </track>
+
+          <track title="seg_400"> <source href="assets/sounds/voices/seg4/seg400.mp3" /> </track>
+          <track title="seg_410"> <source href="assets/sounds/voices/seg4/seg410.mp3" /> </track>
+          <track title="seg_420"> <source href="assets/sounds/voices/seg4/seg420.mp3" /> </track>
+          <track title="seg_430"> <source href="assets/sounds/voices/seg4/seg430.mp3" /> </track>
+          <track title="seg_440"> <source href="assets/sounds/voices/seg4/seg440.mp3" /> </track>
+
+          <track title="seg_500"> <source href="assets/sounds/voices/seg5/seg500.mp3" /> </track>
+          <track title="seg_510"> <source href="assets/sounds/voices/seg5/seg510.mp3" /> </track>
+          <track title="seg_520"> <source href="assets/sounds/voices/seg5/seg520.mp3" /> </track>
+
+          <track title="seg_600"> <source href="assets/sounds/voices/seg6/seg600.mp3" /> </track>
+          <track title="seg_610"> <source href="assets/sounds/voices/seg6/seg610.mp3" /> </track>
+          <track title="seg_620"> <source href="assets/sounds/voices/seg6/seg620.mp3" /> </track>
+          <track title="seg_630"> <source href="assets/sounds/voices/seg6/seg630.mp3" /> </track>
+        </audio>
+
     </assets>
     <scenes>
 
