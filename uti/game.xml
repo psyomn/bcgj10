@@ -48,9 +48,9 @@
           <image src="assets/images/bkg/seg5boxopen.png"       name ="seg_05c" />
           <image src="assets/images/bkg/seg5afterboxmaybe.png" name ="seg_05d" />
 
-          <image src="assets/images/bkg/Segment6.png"          name ="seg_00" />
+          <image src="assets/images/bkg/Segment6.png"          name ="seg_06" />
 
-          <image src="assets/images/bkg/incaseyouwantsomethingmorestarkforseg6.png" name="seg_00" />
+          <image src="assets/images/bkg/incaseyouwantsomethingmorestarkforseg6.png" name="seg_06b" />
         </imagepack>
 
         <imagepack name="logo" x="50%" y="0" z="10" xAnchor="50%">
@@ -378,6 +378,18 @@
         straightened out.
       </line>
 
+      <!-- Rewind stuff -->
+
+      <pause asset="bgm" />
+      <play asset="sfx" />
+      <flicker asset="backgrounds" duration="1000" times="4" opacity="1" />
+      <hide asset="backgrounds" duration="3000" />
+      <hide asset="tb_main" />
+      <show asset="black-curtain" duration="100" />
+      <wait />
+
+      <!-- End rewind stuff -->
+
     <goto scene="segment_3" />
     </scene>
 
@@ -387,9 +399,16 @@
     <!-- Begin segment 3 -->
 
     <scene id="segment_3">
+
+      <set asset="bgm" track="main-loop" />
+      <play asset="bgm" />
+      <show asset="tb_main" />
+      <set asset="backgrounds" image="seg_03" />
+      <show asset="backgrounds" />
+
+
       <line s="e">
-        Hello, princess. Nice of you to join
-        me.
+        Hello, princess. Nice of you to join me.
       </line>
 
       <choice>
@@ -447,6 +466,18 @@
         </option>
       </choice>
 
+      <!-- Rewind stuff -->
+
+      <pause asset="bgm" />
+      <play asset="sfx" />
+      <flicker asset="backgrounds" duration="1000" times="4" opacity="1" />
+      <hide asset="backgrounds" duration="3000" />
+      <hide asset="tb_main" />
+      <show asset="black-curtain" duration="100" />
+      <wait />
+
+      <!-- End rewind stuff -->
+
       <goto scene="segment_4" />
     </scene>
 
@@ -455,15 +486,20 @@
 
 
     <scene  id="segment_4">
+
+      <set asset="bgm" track="main-loop" />
+      <play asset="bgm" />
+      <show asset="tb_main" />
+      <set asset="backgrounds" image="seg_03" />
+      <show asset="backgrounds" />
+
+
       <line s="e">
-           It's my little reality. You think I'd
-            be much better at this. You know? It's
-            so aggravating not being sure. Just
-            not quite fucking getting it. So much
-            of it, so much of this, is already in
-            my head that it's obvious. I already
-            know how this ends. What I don't know
-            is what's in your head.
+         It's my little reality. You think I'd be much better at this. You
+         know? It's so aggravating not being sure. Just not quite fucking
+         getting it. So much of it, so much of this, is already in my head
+         that it's obvious. I already know how this ends. What I don't know is
+         what's in your head.
       </line>
 
       <choice>
@@ -506,6 +542,20 @@
         Don't bother, I'll do it myself.
       </line>
 
+      <!-- Rewind stuff -->
+
+      <pause asset="bgm" />
+      <play asset="sfx" />
+      <flicker asset="backgrounds" duration="1000" times="4" opacity="1" />
+      <hide asset="backgrounds" duration="3000" />
+      <hide asset="tb_main" />
+      <show asset="black-curtain" duration="100" />
+      <wait />
+
+      <!-- End rewind stuff -->
+
+
+
       <goto scene="segment_5" />
     </scene>
 
@@ -513,24 +563,41 @@
     <!-- Begin segment 5 -->
 
     <scene  id="segment_5">
+
+      <set asset="bgm" track="main-loop" />
+      <play asset="bgm" />
+      <show asset="tb_main" />
+      <set asset="backgrounds" image="seg_05a" />
+      <show asset="backgrounds" />
+
       <line s="e">
-         I've decided it wasn't me. It was you.
-         So, I've gone ahead and pared things
-         back a little. Go on. It's right there,
-         just for you.
+         I've decided it wasn't me. It was you.  So, I've gone ahead and pared
+         things back a little. Go on. It's right there, just for you.
       </line>
 
+      <break />
+
+      <set asset="backgrounds" image="seg_05b" />
+      <show asset="backgrounds" duration="0" />
+      <break />
+
       <choice>
-        <option label="what happens when I leave"> 
+        <option label="what happens when I leave">
           <line s="e">
             Nothing you need to worry about just yet. Please, go ahead.
           </line>
         </option>
         <option label="open box">
+          <set asset="backgrounds" image="seg_05c" />
+          <show asset="backgrounds" duration="200" />
+          <break />
           <line s="e">
             Congratulations. You've found the key that leads your exit. Now, if
             you wouldn't putting that bullet into your head, that'd be great.
             Hurry now, before the excitement fades.
+            <set asset="backgrounds" image="seg_05d" />
+            <show asset="backgrounds" duration="0" />
+            <break />
           </line>
         </option>
       </choice>
@@ -539,6 +606,18 @@
         <option label="REWIND"> </option>
       </choice>
 
+      <!-- Rewind stuff -->
+
+      <pause asset="bgm" />
+      <play asset="sfx" />
+      <flicker asset="backgrounds" duration="1000" times="4" opacity="1" />
+      <hide asset="backgrounds" duration="3000" />
+      <hide asset="tb_main" />
+      <show asset="black-curtain" duration="100" />
+      <wait />
+
+      <!-- End rewind stuff -->
+
       <goto scene="segment_6" />
     </scene>
 
@@ -546,6 +625,13 @@
     <!-- Begin segment 6 -->
 
     <scene  id="segment_6">
+
+      <set asset="bgm" track="main-loop" />
+      <play asset="bgm" />
+      <show asset="tb_main" />
+      <set asset="backgrounds" image="seg_06" />
+      <show asset="backgrounds" />
+
       <line s="e">
         You didn't think it's be that easy, did you? I can assure you, whatever
         control you think you have in this situation is an illusion.
