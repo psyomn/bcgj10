@@ -110,7 +110,7 @@
 
 
     <scene  id="segment_1">
-      <set asset="backgrounds" image="seg_01" />
+      <set asset="backgrounds" image="seg_02" />
       <show asset="backgrounds" />
       <show asset="tb_main" duration="500" effect="slide" direction="top" />
       <line s="e">
