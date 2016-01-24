@@ -183,7 +183,7 @@ Narrator in straight text
     * Oh. No. That didn't fix it.
     * Maybe the next try? Perhaps?
     * You could give it a go, of course.
-    * Or you could do what you know is right.
+    * Or you could do what you're supposed to do.
   * [ rewind | take the exit ]
     * Just do it!
     * You wanted out. There's the exit.
