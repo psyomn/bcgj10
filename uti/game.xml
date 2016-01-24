@@ -15,7 +15,7 @@
         <textbox
             name="tb_main"
             x="0" y="365px"
-            width="900px" height="120px"
+            width="900px" height="180px"
             speed="0"
             color="red">
         </textbox>
@@ -110,7 +110,7 @@
 
 
     <scene  id="segment_1">
-      <set asset="backgrounds" image="seg_02" />
+      <set asset="backgrounds" image="seg_01" />
       <show asset="backgrounds" />
       <show asset="tb_main" duration="500" effect="slide" direction="top" />
       <line s="e">
@@ -231,21 +231,14 @@
         It's the kind of experiment you
         couldn't really do today. Not in the
         the light, at least.
-      </line>
-      <line s="e">
         It still amuses
         how recent some of psychological
         transgressions are. Anyway, simple
         experiment.
-      </line>
-      <line s="e">
         Students were brought in
         to set up a mock prison. Some of the
         student were prisoners and others were
         guards.
-      </line>
-
-      <line s="e">
         The professor running the
         experiment placed himself in the role
         as warden. In retrospect, it's fairly
@@ -280,109 +273,303 @@
     <!-- End Segment 1 -->
 
     <scene id="segment_2">
-    <line s="e"> Well, hello princess. Nice of you to join me. </line>
-    <line s="e"> Formalities out of the way, yes? </line>
-    <line s="e"> The strong, silent type. </line>
-    <line s="e"> I can work with that. </line>
-    <line s="e"> So, you're trapped in a room, clearly at the mercy of the wrong type of person. </line>
-    <line s="e"> There is only one way out and the key to getting out is in this room. </line>
-    <line s="e"> Influence. I hear you're a fan. </line>
-    <line s="e"> It's curious what we do with it. </line>
+      <line s="e">
+        Hello princess. Nice of you to join me.  I was starting to wonder when
+        you'd come around.
+      </line>
+      <line s="e">
+        Let's get the formalities out of the way, yeah?
+      </line>
 
-    <line s="e"> Influence. I hear you're a fan. </line>
-    <line s="e"> It's curious what we do with it. </line>
-    <line s="e"> Like the notion that shouting at me is going to change how this goes. </line>
+      <choice>
+        <option label="interrupt">
+          <line s="e">
+          Influence. I hear you're a fan. We
+          build up these reputations and then
+          exercise them as influence.
+        It's
+          curious what we do with our influence.
+          Like the notion that you're going to
+          have any influence of how this goes by
+          interrupting me.
+          What I also find
+          curious is what we do when our
+          influence is subverted or, worse,
+          completely undercut.
+        </line>
 
+        <line s="e">
+          Tell me, how does it feel?
+        </line>
 
-    <line s="e"> It's also curious what we do when our influence is subverted or, worse, completely undercut. </line>
-    <line s="e"> How does it feel? </line>
-    <line s="e"> Very eloquent. </line>
+        <choice>
+          <option label="go fuck yourself">
+            <line s="e">
+              Very eloquent. I both suitably
+              impressed and intimidated. Well done.
+            </line>
+          </option>
+          <option label="I want out">
+            <line s="e">
+            Perfectly reasonable request.
+            Logically and emotionally sound. And I
+            am perfectly happy to see you go, but
+            it is going to take a bit of effort on
+            your behalf.
+          </line>
+          </option>
+          <option label="...">
+            <line s="e">
+            Stoic in the face of adversity. It's
+            admirable. Really. Colour me impressed
+            </line>
+          </option>
+        </choice>
 
-    <line s="e"> Stoic in the face of adversity. Admirable. Really. </line>
+        </option>
+        <option label="check door">
+          <line s="e">
+            The strong, silent type, huh? I can work with that. So, you're
+            trapped in a room, at the mercy of the wrong type of person. There
+            is only one way out and the key to doing so is in this room.
+          </line>
+        </option>
+      </choice>
 
-    <line s="e"> That rests with you. The exit is yours to take, not mine. Although... </line>
+      <line s="e">
+        You know, it occurs to me that forgetting to have a key hole may have
+        just be one of the critical pieces I left out in my haste. It seems
+        ridiculous to expect you to solve an incomplete puzzle, doesn't it?
+      </line>
 
+      <choice>
+        <option label="REWIND" />
+      </choice>
 
-    <line s="e"> It occurs to me, that in my haste, I may have left out some critical pieces. </line>
-    <line s="e"> It seems ridiculous to expect you to solve an incomplete puzzle, doesn't it? </line>
+      <line s="e">
+        Please, go ahead. I'll get this all
+        straightened out.
+      </line>
+
     <goto scene="segment_3" />
-
     </scene>
-    <scene  id="segment_3">
-    <line s="e"> added content, functional and decorative </line>
-    <line s="e"> not clear on what this is just yet </line>
-    <line s="e"> Hello, princess. Nice of you to join me. </line>
-    <line s="e"> It's really losing its charm already, isn't it? </line>
-    <line s="e"> I agree. It's a bit tired. </line>
-    <line s="e"> Doesn't matter. We're well on our way anyway. </line>
 
-    <line s="e"> What brings someone to a place like this? </line>
-    <line s="e"> What brings someone to bring someone to a place like this? </line>
-    <line s="e"> Take a minute. Consider it. </line>
-    <line s="e"> What have you done that would bring you to a place like this? </line>
-    <line s="e"> What have you done that would bring someone to bring you to a place like this? </line>
-    <line s="e"> I know what you're thinking... he can't possible know that. </line>
-    <line s="e"> You're here. So, somebody knows. </line>
+    <!-- End segment 2 -->
 
 
+    <!-- Begin segment 3 -->
 
-    <line s="e"> Now, if you don't mind, we haven't all day. </line>
-    <line s="e"> Please, feel free to figure it all out. </line>
+    <scene id="segment_3">
+      <line s="e">
+        Hello, princess. Nice of you to join
+        me.
+      </line>
 
-    <line s="e"> It's here and, quite frankly, I'm a little disappointed it's taking you so long. </line>
+      <choice>
+        <option label="shut up">
+          <line s="e">
+            It's really starting to lose its charm already, isn't it? I agree.
+            It's a bit tired. Doesn't matter. We are well on our way, aren't we?
+          </line>
+        </option>
 
-    <goto scene="segment_4" />
+        <option label="what do you want?">
+          <line s="e">
+            What bring a person to a place like this, do you think? What brings
+            someone to bring someone to a place like this? Take a minute.
+            Consider it.  What have you done that would bring you to a place
+            like this? What have you done that would bring someone to bring you
+            to a place like this?
+          </line>
+        </option>
+      </choice>
+
+      <choice>
+        <option label="examine items"> </option>
+      </choice>
+
+      <line s="e">
+        I know what you're thinking. "He can't
+        possibly know that." But you're here,
+        aren't you? So, logically, someone
+        must know.
+      </line>
+
+      <line s="e">
+        Now, if you wouldn't mind, we haven't
+        all day. Feel free to figure it all
+        out. The key to your way out is right
+        in front of you.
+      </line>
+
+      <choice>
+        <option label="examine items"> </option>
+      </choice>
+
+      <line s="e">
+        Quite frankly, I'm a little
+        disappointed it's taking you so long.
+        Go ahead, let's try this again
+      </line>
+
+      <choice>
+        <option label="rewind">
+          <label s="e">
+            Please, I haven't got all day.
+          </label>
+        </option>
+      </choice>
+
+      <goto scene="segment_4" />
     </scene>
+
+    <!-- End segment 3 -->
+    <!-- Begin segment 4 -->
+
 
     <scene  id="segment_4">
-    <line s="e"> It's my little reality. </line>
-    <line s="e"> You think I'd be better at this. </line>
-    <line s="e"> It's so aggravating not being sure, you know. </line>
-    <line s="e"> Just not quite fucking getting it. </line>
-    <line s="e"> So much of it is in my head that it is obvious. </line>
-    <line s="e"> I already know how this ends. </line>
-    <line s="e"> What I don't know is what's in your head. </line>
-    <line s="e"> Do you just not understand? </line>
-    <line s="e"> Don't you get it? </line>
-    <line s="e"> Then again, maybe you do? </line>
-    <line s="e"> Maybe.... maybe you're just fucking with me... </line>
-    <line s="e"> How many hoops will I jump through? </line>
-    <line s="e"> How much of your work will I do for you? </line>
-    <line s="e"> Maybe I did over complicate it. </line>
-    <line s="e"> It's hard to say. </line>
-    <line s="e"> Either way, we should really sort that out. </line>
-    <line s="e"> [ rewind ] >> forced / timed by game </line>
-    <line s="e"> Don't bother. I'll do it myself. </line>
-    <goto scene="segment_5" />
+      <line s="e">
+           It's my little reality. You think I'd
+            be much better at this. You know? It's
+            so aggravating not being sure. Just
+            not quite fucking getting it. So much
+            of it, so much of this, is already in
+            my head that it's obvious. I already
+            know how this ends. What I don't know
+            is what's in your head.
+      </line>
+
+      <choice>
+        <option label="confused"> </option>
+        <option label="insult"> </option>
+        <option label="..."> </option>
+      </choice>
+
+      <line s="e">
+        Do you just not understand? What is it?
+        Don't you get it? Then again, maybe
+        you do? Maybe you are perfectly clear
+        on what's going on here and you are
+        just fucking with me.
+      </line>
+
+      <choice>
+        <option label="yes"> </option>
+        <option label="no"> </option>
+        <option label="..."> </option>
+      </choice>
+
+      <line s="e">
+        How much of your work will I do for
+        you? How many fucking hoops will I
+        jump through?
+      </line>
+
+      <line s="e">
+        Or maybe I did over complicate it.
+        It's hard to say. Either way, we can
+        sort that out.
+      </line>
+
+      <choice>
+        <option label="REWIND"> </option>
+      </choice>
+
+      <line s="e">
+        Don't bother, I'll do it myself.
+      </line>
+
+      <goto scene="segment_5" />
     </scene>
+
+    <!-- End segment 4 -->
+    <!-- Begin segment 5 -->
+
     <scene  id="segment_5">
-    <line s="e"> I've decided it wasn't me, it was you. </line>
-    <line s="e"> So, I've pared things back a little. </line>
-    <line s="e"> Go on. It's there just for you. </line>
-    <line s="e"> nothing you need to worry about just yet </line>
-    <line s="e"> Congratulations, you've found the key that leads to your exit. </line>
-    <line s="e"> Hurry now, before the excitement fades. </line>
-    <goto scene="segment_6" />
+      <line s="e">
+         I've decided it wasn't me. It was you.
+         So, I've gone ahead and pared things
+         back a little. Go on. It's right there,
+         just for you.
+      </line>
+
+      <choice>
+        <option label="what happens when I leave"> 
+          <line s="e">
+            Nothing you need to worry about just yet. Please, go ahead.
+          </line>
+        </option>
+        <option label="open box">
+          <line s="e">
+            Congratulations. You've found the key that leads your exit. Now, if
+            you wouldn't putting that bullet into your head, that'd be great.
+            Hurry now, before the excitement fades.
+          </line>
+        </option>
+      </choice>
+
+      <choice>
+        <option label="REWIND"> </option>
+      </choice>
+
+      <goto scene="segment_6" />
     </scene>
+
+    <!-- End segment 5 -->
+    <!-- Begin segment 6 -->
+
     <scene  id="segment_6">
-    <line s="e"> You didn't think it'd be that easy, did you? </line>
-    <line s="e"> I can assure you, whatever control you think you have in this situation is an illusion. </line>
-    <line s="e"> Oh. No. That didn't fix it. </line>
-    <line s="e"> Maybe the next try? Perhaps? </line>
-    <line s="e"> You could give it a go, of course. </line>
-    <line s="e"> Or you could do what you know is right. </line>
+      <line s="e">
+        You didn't think it's be that easy, did you? I can assure you, whatever
+        control you think you have in this situation is an illusion.
+      </line>
 
-    <line s="e"> Just do it! </line>
-    <line s="e"> You wanted out. There's the exit. </line>
-    <line s="e"> If someone was in the way of you getting out and you had that in your hand you do whatever you needed to do to get them out of your way. </line>
-    <line s="e"> You're in the way. </line>
-    <line s="e"> Do what you need to do. </line>
-    <line s="e"> Take the exit. </line>
+      <choice>
+        <option label="REWIND"></option>
+        <option label="take the exit">
+          <goto scene="the_end" />
+        </option>
+      </choice>
 
-    <line s="e"> I think, it's important to value time, but only insofar as that time itself is valuable. </line>
-    <line s="e"> Is this remaining time valuable to you? </line>
-    <line s="e"> You take as long as I need to figure that out. I've as much time as you do. </line>
-    <line s="e"> Truth be told, substantially more. </line>
+      <line s="e">
+        Oh, no. That didn't fix it. Maybe the next try? Perhaps? Who knows? You
+        could give it a go, of course. Or you could do what you know is right.
+      </line>
+
+      <line s="e">
+        Do it! You wanted out and there's the exit, right in front of you. If
+        someone was in the way of you getting out and you had that in your hand
+        you would do whatever was needed to get them out of your way. You are in
+        the way. Do what you need to do. Take the exit.
+      </line>
+
+      <choice>
+        <option label="REWIND"></option>
+        <option label="take the exit">
+          <goto scene="the_end" />
+        </option>
+      </choice>
+
+      <line s="e">
+        I think it's important to value time, but on insofar as that time itself
+        is value. Is this remaining time valuable to you? Stuck here, running
+        over the same ground? You take as long as you need to figure that out.
+        I've as much time as you do. Truth be told, substantially more.
+      </line>
+
+      <choice>
+        <option label="take the exit">
+          <goto scene="the_end" />
+        </option>
+      </choice>
+    </scene>
+
+    <scene id="the_end">
+      <line s="n">
+        A visual novel by: story: github.com/dshute; art:
+        github.com/dandydeadkid, sound: https://soundcloud.com/Tanner_Howell,
+        and programming: github.com/psyomn
+      </line>
     </scene>
 </scenes>
 </ws>
