@@ -1,0 +1,340 @@
+SEGMENT 1
+
+                         HECTOR
+            Well, hello princess. Nice of you to
+            join me. I was starting to wonder when
+            you'd come around, but you made it.
+            Well done. Let's get the formalities
+            out of the way, yeah?
+
+[ no action / response | check room | check items ]
+
+                         HECTOR
+            The strong, silent type, huh? That's
+            okay. I can definitely work with that.
+            I'd offer you the deluxe tour, but it
+            seems unnecessary and I suspect you're
+            smart enough to have figured this out.
+
+                         HECTOR
+            You're trapped in a room and clearly
+            at the mercy of the wrong type of
+            person to be expecting any mercy from.
+            Like most disappointments in life,
+            there is a way out, but it requires
+            some effort on your part. The key to
+            getting out is in this room.
+
+[ where's the key? | where am I? | no keyhole ]
+
+DECISION 1.1 - WHERE IS THE KEY?
+
+                         HECTOR
+            I expected a bit more from you. We did,
+            after all, just go over this. The key
+            to your exit, and I know this might
+            come as a bit of shock, is in this
+            room. I'm going to need you to pay a
+            bit closer attention.
+
+DECISION 1.2 - WHY AM I HERE?
+
+                         HECTOR
+            Influence. Yours and others. Are you
+            familiar with the Stanford Prison
+            Experiment?
+
+[ yes | no | ... ]
+
+DECISION 1.2.1 - YES
+
+                         HECTOR
+            Will wonders never cease?
+
+DECISION 1.2.2 - NO | ...
+
+                         HECTOR
+            It's the kind of experiment you
+            couldn't really do today. Not in the
+            the light, at least. It still amuses
+            how recent some of psychological
+            transgressions are. Anyway, simple
+            experiment. Students were brought in
+            to set up a mock prison. Some of the
+            student were prisoners and others were
+            guards. The professor running the
+            experiment placed himself in the role
+            as warden. In retrospect, it's fairly
+            unsurprising how quickly it started to
+            degenerate.
+
+                         HECTOR
+            The Standford Prison Experiment. Abu
+            Ghraib. Good ole Charlie Mason and his
+            "family" members writing on the walls
+            in their victim's blood. Influence
+            goes a long way.
+
+                         HECTOR
+            It's interesting, sure, but it doesn't
+            quite wash. Not every ghetto kid is a
+            drug dealing murderer. Not ever
+            politician is a backscratching
+            prostitute for hire. Not every CEO is
+            an image obsessed sociopath. At some
+            point you have to be responsible for
+            the influence you receive, but also
+            for the influence you exercise.
+
+DECISION 1.3 - NO KEYHOLE
+
+                         HECTOR
+            Well. That's certainly embarrassing.
+            Let me fix that right up for you.
+
+BUTTON 1
+
+[ rewind ]
+
+                         HECTOR
+            Well, go ahead. Give me a hand and
+            I'll get you your keyhole.
+
+SEGMENT 2
+
+                         HECTOR
+            Hello princess. Nice of you to join me.
+            I was starting to wonder when you'd
+            come around. Let's get the formalities
+            out of the way, yeah?
+
+[ interrupt | check door]
+
+DECISION 2.1 - INTERRUPT
+
+                         HECTOR
+            Influence. I hear you're a fan. We
+            build up these reputations and then
+            exercise them as influence. It's
+            curious what we do with our influence.
+            Like the notion that you're going to
+            have any influence of how this goes by
+            interrupting me. What I also find
+            curious is what we do when our
+            influence is subverted or, worse,
+            completely undercut.
+
+                         HECTOR
+            Tell me, how does it feel?
+
+[ go fuck yourself | let me out | ... ]
+
+DECISION 2.1.1 - GO FUCK YOURSELF
+
+                         HECTOR
+            Very eloquent. I both suitably
+            impressed and intimidated. Well done.
+
+DECISION 2.1.2 - I WANT OUT
+
+                         HECTOR
+            Perfectly reasonable request.
+            Logically and emotionally sound. And I
+            am perfectly happy to see you go, but
+            it is going to take a bit of effort on
+            your behalf.
+
+DECISION 2.1.3 - ...
+
+                         HECTOR
+            Stoic in the face of adversity. It's
+            admirable. Really. Colour me impressed
+
+DECISION 2.2 - CHECK DOOR
+
+                         HECTOR
+            The strong, silent type, huh? I can
+            work with that. So, you're trapped in
+            a room, at the mercy of the wrong type
+            of person. There is only one way out
+            and the key to doing so is in this
+            room.
+
+BUTTON 2 - REWIND
+
+                         HECTOR
+            You know, it occurs to me that
+            forgetting to have a key hole may have
+            just be one of the critical pieces I
+            left out in my haste. It seems
+            ridiculous to expect you to solve an
+            incomplete puzzle, doesn't it?
+
+[ rewind ]
+
+                         HECTOR
+            Please, go ahead. I'll get this all
+            straightened out.
+
+SEGMENT 3
+
+                         HECTOR
+            Hello, princess. Nice of you to join
+            me.
+
+[ shut up | what do you want? ]
+
+DECISION 3.1 - SHUT UP
+
+                         HECTOR
+            It's really starting to lose its charm
+            already, isn't it? I agree. It's a bit
+            tired. Doesn't matter. We are well on
+            our way, aren't we?
+
+DECISION 3.2 - WHAT DO YOU WANT?
+
+                         HECTOR
+            What bring a person to a place like
+            this, do you think? What brings
+            someone to bring someone to a place
+            like this? Take a minute. Consider it.
+            What have you done that would bring
+            you to a place like this? What have
+            you done that would bring someone to
+            bring you to a place like this?
+
+[ examine items ]
+
+BUTTON 3
+
+                         HECTOR
+            I know what you're thinking. "He can't
+            possibly know that." But you're here,
+            aren't you? So, logically, someone
+            must know.
+
+                         HECTOR
+            Now, if you wouldn't mind, we haven't
+            all day. Feel free to figure it all
+            out. The key to your way out is right
+            in front of you.
+
+[ examine items ]
+
+                         HECTOR
+            Quite frankly, I'm a little
+            disappointed it's taking you so long.
+            Go ahead, let's try this again
+
+[ rewind ]
+
+                         HECTOR
+            Please, I haven't got all day.
+
+SEGMENT 4
+
+                         HECTOR
+            It's my little reality. You think I'd
+            be much better at this. You know? It's
+            so aggravating not being sure. Just
+            not quite fucking getting it. So much
+            of it, so much of this, is already in
+            my head that it's obvious. I already
+            know how this ends. What I don't know
+            is what's in your head.
+
+[ confused | insult | ... ]
+
+                         HECTOR
+            Do you just not understand? What is it?
+            Don't you get it? Then again, maybe
+            you do? Maybe you are perfectly clear
+            on what's going on here and you are
+            just fucking with me.
+
+[ yes | no | ... ]
+
+                         HECTOR
+            How much of your work will I do for
+            you? How many fucking hoops will I
+            jump through?
+
+                         HECTOR
+            Or maybe I did over complicate it.
+            It's hard to say. Either way, we can
+            sort that out.
+
+[ rewind ] > forced / user can't select
+
+                         HECTOR
+            Don't bother. I'll do it myself.
+
+SEGMENT 5
+
+                         HECTOR
+            I've decided it wasn't me. It was you.
+            So, I've gone ahead and pared things
+            back a little. Go on. It's right there,
+            just for you.
+
+[ what happens when I leave | open box ]
+
+DECISION 5.1 - WHAT HAPPENS WHEN I LEAVE
+
+                         HECTOR
+            Nothing you need to worry about just
+            yet. Please, go ahead
+
+DECISION 5.2 - OPEN BOX
+
+                         HECTOR
+            Congratulations. You've found the key
+            that leads your exit. Now, if you
+            wouldn't putting that bullet into your
+            head, that'd be great. Hurry now,
+            before the excitement fades.
+
+[ rewind ]
+
+SEGMENT 6
+
+                         HECTOR
+            You didn't think it's be that easy,
+            did you? I can assure you, whatever
+            control you think you have in this
+            situation is an illusion.
+
+[ rewind | take the exit ]
+
+                         HECTOR
+            Oh, no. That didn't fix it. Maybe the
+            next try? Perhaps? Who knows? You
+            could give it a go, of course. Or you
+            could do what you know is right.
+
+[ rewind | take the exit ]
+
+                         HECTOR
+            Do it! You wanted out and there's the
+            exit, right in front of you. If
+            someone was in the way of you getting
+            out and you had that in your hand you
+            would do whatever was needed to get
+            them out of your way. You are in the
+            way. Do what you need to do. Take the
+            exit.
+
+[ rewind | take the exit ]
+
+                         HECTOR
+            I think it's important to value time,
+            but on insofar as that time itself is
+            value. Is this remaining time valuable
+            to you? Stuck here, running over the
+            same ground? You take as long as you
+            need to figure that out. I've as much
+            time as you do. Truth be told,
+            substantially more.
+
+[ take the exit ]
