@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<ws>
+    <settings>
+        <stage width="900px" height="636px" id="Stage" create="yes" center="yes" />
+        <triggers/>
+    </settings>
+    <assets>
+        <audio name="music" loop="true" fade="false" autopause="true">
+            <track title="main_menu_music">
+                <source href="chaos-circus.mp3" type="mp3" />
+                <source href="chaos-circus.ogg" type="ogg" />
+            </track>
+            <track title="badass">
+                <source href="chaos-circus.mp3" type="mp3" />
+                <source href="chaos-circus.ogg" type="ogg" />
+            </track>
+        </audio>
+    </assets>
+    <scenes>
+        <scene id="start">
+            <set asset="music" track="main_menu_music" />
+            <play asset="music" fadein="500"/>
+            <break/>
+            <stop asset="music" fade="true" fadeout="1000" />
+            <wait />
+            <set asset="music" track="badass" />
+            <play asset="music" />
+            <restart/>
+        </scene>
+    </scenes>
+</ws>

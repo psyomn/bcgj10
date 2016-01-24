@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<ws>
+    <settings>
+        <stage width="1366px" height="768px" create="yes" center="yes" resize="yes" />
+        <triggers>
+        </triggers>
+    </settings>
+    <assets>
+        
+        <background name="bg" src="../../assets/images/Rainbow_A_01.jpg" width="100%" height="100%" />
+        
+        <textbox name="tb" cssid="tb" />
+        
+        <character name="n" textbox="tb"></character>
+        
+    </assets>
+    <scenes>
+        
+        
+        <scene id="start">
+            
+            <var name="prefill" value="foo!" />
+            
+            <show asset="bg" />
+            
+            <prompt 
+                title="Default prompt"
+                message="This is the default prompt with only a title and a message supplied."
+                var="foo" />
+            
+            <prompt 
+                title="Prompt with customized button text"
+                message="This prompt uses customized texts on the button."
+                var="foo"
+                submitText="Hit me to continue!"
+                cancelText="No, thanks, stop this." />
+            
+            <prompt
+                title="Hidden cancel button"
+                message="The cancel button is hidden in this prompt but leaving the input empty is possible."
+                var="foo"
+                hideCancelButton="yes" />
+            
+            <prompt
+                title="Hidden cancel button, no empty input"
+                message="The cancel button is hidden in this prompt and you cannot leave the input empty."
+                var="foo"
+                hideCancelButton="yes"
+                allowEmptyInput="no" />
+            
+            <prompt
+                title="Prompt with ({$prefill}) variables."
+                message="This prompt has a default ({$prefill}) value loaded from a variable."
+                var="foo"
+                prefill="{$prefill}" />
+            
+            <alert
+                title="An alert with {$prefill}"
+                message="Its message has {$prefill}" />
+            
+            <confirm
+                var="foo"
+                title="A confirm with {$prefill}"
+                message="Its message has {$prefill}" />
+            
+            <restart />
+        </scene>
+        
+    </scenes>
+</ws>

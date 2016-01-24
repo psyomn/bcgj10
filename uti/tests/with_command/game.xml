@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<ws>
+    <settings>
+        <stage width="1366px" height="768px" create="yes" center="yes" resize="yes" />
+        <triggers>
+            <trigger name="next_on_right" event="keyup" key="RIGHT_ARROW" special="next" />
+            <trigger name="next_on_space" event="keyup" key="SPACE" special="next" />
+        </triggers>
+    </settings>
+    <assets>
+        <textbox name="tb" cssid="tb" />
+        <character name="n" textbox="tb"></character>
+    </assets>
+    <scenes>
+        
+        <scene id="start">
+            <var name="state1" value="first" />
+            <var name="state2" value="first" />
+            <trigger name="next_on_right" action="activate" />
+            <trigger name="next_on_space" action="activate" />
+            <show asset="tb" />
+            <wait />
+            <goto scene="loop" />
+        </scene>
+        
+        <scene id="loop">
+            <with var="state1">
+                <when is="first">
+                    <var name="text" value="The 1st subround of {$state2} round." />
+                    <var name="state1" value="second" />
+                </when>
+                <when is="second">
+                    <var name="text" value="The 2nd subround of {$state2} round." />
+                    <var name="state1" value="third" />
+                </when>
+                <when is="third">
+                    <var name="text" value="The 3rd subround of {$state2} round." />
+                    <with var="state2">
+                        <when is="first">
+                            <var name="state2" value="second" />
+                        </when>
+                        <when is="second">
+                            <var name="state2" value="third" />
+                        </when>
+                        <when is="third">
+                            <var name="state2" value="first" />
+                        </when>
+                    </with>
+                    <var name="state1" value="first" />
+                </when>
+                <else>
+                    <var name="text" value="WTF?!" />
+                </else>
+            </with>
+            
+            <line s="n">{$text}</line>
+            
+            <goto scene="loop" />
+        </scene>
+        
+    </scenes>
+</ws>

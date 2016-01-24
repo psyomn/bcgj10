@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<ws>
+    <settings>
+        <stage width="1366px" height="768px" create="yes" center="yes" resize="yes" />
+        <triggers>
+            <trigger name="game_menu_key_trigger" event="keyup" key="ESCAPE" function="savegames" />
+            <trigger name="next_on_right" event="keyup" key="RIGHT_ARROW" special="next" />
+            <trigger name="next_on_space" event="keyup" key="SPACE" special="next" />
+            <trigger name="sub_scene_by_key" event="keyup" key="UP_ARROW" sub="custom_event_scene" />
+        </triggers>
+        <setting name="host.stage.resize" value="true" />
+        <setting name="host.inspector.enable" value="true" />
+    </settings>
+    <assets>
+        <textbox
+            name="tb_main"
+            x="0" y="365px"
+            width="900px" height="120px"
+            speed="0"
+            color="red">
+        </textbox>
+
+        <!-- This is the narrator or whatever -->
+        <character name="e" textbox="tb_main">
+          <displayname>Hector</displayname>
+        </character>
+
+        <!-- p for prisoner or princess -->
+        <character name="p" textbox="tb_main">
+          <displayname>Prisoner</displayname>
+        </character>
+
+        <!-- our narrator -->
+        <character name="n" textbox="tb_main"></character>
+
+        <imagepack name="backgrounds" x="0" y="0" z="5" width="1366px">
+          <!-- <image src="assets/images/bkg/room.png" name="startroom" /> -->
+
+          <image src="assets/images/title-moreonthatidea.png" name="title" />
+
+          <image src="assets/images/bkg/Segment1-4.png"        name ="seg_01" />
+
+          <image src="assets/images/bkg/Segment2.png"          name ="seg_02" />
+          <image src="assets/images/bkg/Segment3.png"          name ="seg_03" />
+
+          <image src="assets/images/bkg/Segment5part1.png"     name ="seg_05a" />
+          <image src="assets/images/bkg/seg5closertobox.png"   name ="seg_05b" />
+          <image src="assets/images/bkg/seg5boxopen.png"       name ="seg_05c" />
+          <image src="assets/images/bkg/seg5afterboxmaybe.png" name ="seg_05d" />
+
+          <image src="assets/images/bkg/Segment6.png"          name ="seg_00" />
+
+          <image src="assets/images/bkg/incaseyouwantsomethingmorestarkforseg6.png" name="seg_00" />
+        </imagepack>
+
+        <imagepack name="logo" x="50%" y="0" z="10" xAnchor="50%">
+            <image src="assets/images/logo.png" name="logo" />
+        </imagepack>
+
+        <curtain name="white" color="white" z="0" />
+        <curtain name="black-curtain" color="black" z="0" />
+
+        <audio name="bgm" loop="true" fade="false">
+          <track title="main-loop" >
+            <source href="assets/sounds/bgm/Loop1_UTI.mp3" type="ogg" />
+          </track>
+        </audio>
+
+    </assets>
+    <scenes>
+
+        <scene id="start">
+
+            <trigger name="next_on_right" action="activate" />
+            <trigger name="next_on_space" action="activate" />
+            <trigger name="game_menu_key_trigger" action="activate" />
+
+            <set asset="backgrounds" image="startroom" duration="0" />
+            <set asset="cecile" image="smile" duration="0" />
+            <set asset="logo" image="logo" duration="0" />
+            <set asset="music" track="legend" />
+            <set asset="bgm" track="main-loop" />
+            <move asset="cecile" x="50%" y="100%" xAnchor="45%" yAnchor="100%" duration="0" />
+            <move asset="tb_main" x="50%" y="90%" xAnchor="50%" yAnchor="100%" duration="0" />
+            <move asset="logo" x="50%" y="50%" xAnchor="50%" yAnchor="50%" duration="0" />
+
+            <wait />
+
+            <show asset="black" duration="500" />
+            <set asset="backgrounds" image="title" />
+            <show asset="backgrounds" />
+
+            <break />
+            <wait />
+
+
+            <play asset="bgm" />
+
+            <wait />
+
+            <goto scene="segment_1" />
+
+        </scene>
+
+        <scene id="game_start">
+            <restart />
+        </scene>
+
+        <!-- Generated -->
+
+
+    <scene  id="segment_1">
+      <set asset="backgrounds" image="seg_01" />
+      <show asset="backgrounds" />
+      <show asset="tb_main" duration="500" effect="slide" direction="top" />
+      <line s="e">
+        Well, hello princess. Nice of you to
+        join me. I was starting to wonder when
+        you'd come around, but you made it.
+        Well done.
+      </line>
+
+      <line s="e">
+        Let's get the formalities
+        out of the way, yeah?
+      </line>
+
+      <choice>
+        <option label="don't respond"></option>
+        <option label="check room"></option>
+        <option label="check items"></option>
+      </choice>
+
+      <line s="e">
+        The strong, silent type, huh? That's
+        okay. I can definitely work with that.
+      </line>
+
+      <line s="e">
+        I'd offer you the deluxe tour, but it
+        seems unnecessary and I suspect you're
+        smart enough to have figured this out.
+      </line>
+
+      <line s="e">
+        You're trapped in a room and clearly
+        at the mercy of the wrong type of
+        person to be expecting any mercy from.
+      </line>
+
+      <line s="e">
+        Like most disappointments in life,
+        there is a way out, but it requires
+        some effort on your part. The key to
+        getting out is in this room.
+      </line>
+
+
+      <sub scene="segment_1_phase_1" />
+
+      <goto scene="segment_2" />
+    </scene>
+
+    <scene id="segment_1_phase_1">
+      <var name="asked_seg1_once" action="set" value="false" />
+      <var name="break_out_seg_1" action="set" value="false" />
+
+      <while ifvar="break_out_seg_1" ifvalue="false">
+      <choice>
+        <option label="where's the key?">
+          <line s="e">
+            I expected a bit more from you. We did,
+            after all, just go over this.
+          </line>
+          <line s="e">
+            The key to your exit, and I know this might
+            come as a bit of shock, is in this room. I'm going to need you to pay a
+            bit closer attention.
+          </line>
+        </option>
+        <option label="why am I here?">
+          <line s="e">
+            Influence. Yours and others. Are you
+            familiar with the Stanford Prison
+            Experiment?
+          </line>
+          <choice>
+            <option label="yes">
+              <line s="e">
+                Will wonders never cease?
+              </line>
+            </option>
+            <option label="no">
+              <sub scene="no_standford" />
+            </option>
+            <option label="...">
+              <sub scene="no_standford" />
+            </option>
+          </choice>
+
+        </option>
+        <option ifvar="asked_seg1_once" ifvalue="true" label="no keyhole">
+          <line s="e">
+            Well. That's certainly embarrassing. Let me fix that right up for
+            you.
+          </line>
+
+          <wait />
+          <hide asset="background" />
+          <show asset="curtain-black" />
+          <wait />
+
+          <line s="e">
+            Well, go ahead. Give me a hand and
+            I'll get you your keyhole.
+          </line>
+
+          <choice>
+            <option label="REWIND, and help Hector">
+              <var name="break_out_seg_1" action="set" value="true" />
+            </option>
+          </choice>
+        </option>
+      </choice>
+      <var name="asked_seg1_once" action="set" value="true" />
+      </while>
+    </scene>
+
+    <scene id="no_standford">
+      <line s="e">
+        It's the kind of experiment you
+        couldn't really do today. Not in the
+        the light, at least.
+      </line>
+      <line s="e">
+        It still amuses
+        how recent some of psychological
+        transgressions are. Anyway, simple
+        experiment.
+      </line>
+      <line s="e">
+        Students were brought in
+        to set up a mock prison. Some of the
+        student were prisoners and others were
+        guards.
+      </line>
+
+      <line s="e">
+        The professor running the
+        experiment placed himself in the role
+        as warden. In retrospect, it's fairly
+        unsurprising how quickly it started to
+        degenerate.
+      </line>
+
+      <line s="e">
+        The Standford Prison Experiment. Abu
+        Ghraib. Good ole Charlie Mason and his
+        "family" members writing on the walls
+        in their victim's blood. Influence
+        goes a long way.
+      </line>
+
+      <line s="e">
+        It's interesting, sure, but it doesn't
+        quite wash. Not every ghetto kid is a
+        drug dealing murderer. Not ever
+        politician is a backscratching
+        prostitute for hire.
+      </line>
+      <line s="e">
+        Not every CEO is
+        an image obsessed sociopath. At some
+        point you have to be responsible for
+        the influence you receive, but also
+        for the influence you exercise.
+      </line>
+    </scene>
+
+    <!-- End Segment 1 -->
+
+    <scene id="segment_2">
+    <line s="e"> Well, hello princess. Nice of you to join me. </line>
+    <line s="e"> Formalities out of the way, yes? </line>
+    <line s="e"> The strong, silent type. </line>
+    <line s="e"> I can work with that. </line>
+    <line s="e"> So, you're trapped in a room, clearly at the mercy of the wrong type of person. </line>
+    <line s="e"> There is only one way out and the key to getting out is in this room. </line>
+    <line s="e"> Influence. I hear you're a fan. </line>
+    <line s="e"> It's curious what we do with it. </line>
+
+    <line s="e"> Influence. I hear you're a fan. </line>
+    <line s="e"> It's curious what we do with it. </line>
+    <line s="e"> Like the notion that shouting at me is going to change how this goes. </line>
+
+
+    <line s="e"> It's also curious what we do when our influence is subverted or, worse, completely undercut. </line>
+    <line s="e"> How does it feel? </line>
+    <line s="e"> Very eloquent. </line>
+
+    <line s="e"> Stoic in the face of adversity. Admirable. Really. </line>
+
+    <line s="e"> That rests with you. The exit is yours to take, not mine. Although... </line>
+
+
+    <line s="e"> It occurs to me, that in my haste, I may have left out some critical pieces. </line>
+    <line s="e"> It seems ridiculous to expect you to solve an incomplete puzzle, doesn't it? </line>
+    <goto scene="segment_3" />
+
+    </scene>
+    <scene  id="segment_3">
+    <line s="e"> added content, functional and decorative </line>
+    <line s="e"> not clear on what this is just yet </line>
+    <line s="e"> Hello, princess. Nice of you to join me. </line>
+    <line s="e"> It's really losing its charm already, isn't it? </line>
+    <line s="e"> I agree. It's a bit tired. </line>
+    <line s="e"> Doesn't matter. We're well on our way anyway. </line>
+
+    <line s="e"> What brings someone to a place like this? </line>
+    <line s="e"> What brings someone to bring someone to a place like this? </line>
+    <line s="e"> Take a minute. Consider it. </line>
+    <line s="e"> What have you done that would bring you to a place like this? </line>
+    <line s="e"> What have you done that would bring someone to bring you to a place like this? </line>
+    <line s="e"> I know what you're thinking... he can't possible know that. </line>
+    <line s="e"> You're here. So, somebody knows. </line>
+
+
+
+    <line s="e"> Now, if you don't mind, we haven't all day. </line>
+    <line s="e"> Please, feel free to figure it all out. </line>
+
+    <line s="e"> It's here and, quite frankly, I'm a little disappointed it's taking you so long. </line>
+
+    <goto scene="segment_4" />
+    </scene>
+
+    <scene  id="segment_4">
+    <line s="e"> It's my little reality. </line>
+    <line s="e"> You think I'd be better at this. </line>
+    <line s="e"> It's so aggravating not being sure, you know. </line>
+    <line s="e"> Just not quite fucking getting it. </line>
+    <line s="e"> So much of it is in my head that it is obvious. </line>
+    <line s="e"> I already know how this ends. </line>
+    <line s="e"> What I don't know is what's in your head. </line>
+    <line s="e"> Do you just not understand? </line>
+    <line s="e"> Don't you get it? </line>
+    <line s="e"> Then again, maybe you do? </line>
+    <line s="e"> Maybe.... maybe you're just fucking with me... </line>
+    <line s="e"> How many hoops will I jump through? </line>
+    <line s="e"> How much of your work will I do for you? </line>
+    <line s="e"> Maybe I did over complicate it. </line>
+    <line s="e"> It's hard to say. </line>
+    <line s="e"> Either way, we should really sort that out. </line>
+    <line s="e"> [ rewind ] >> forced / timed by game </line>
+    <line s="e"> Don't bother. I'll do it myself. </line>
+    <goto scene="segment_5" />
+    </scene>
+    <scene  id="segment_5">
+    <line s="e"> I've decided it wasn't me, it was you. </line>
+    <line s="e"> So, I've pared things back a little. </line>
+    <line s="e"> Go on. It's there just for you. </line>
+    <line s="e"> nothing you need to worry about just yet </line>
+    <line s="e"> Congratulations, you've found the key that leads to your exit. </line>
+    <line s="e"> Hurry now, before the excitement fades. </line>
+    <goto scene="segment_6" />
+    </scene>
+    <scene  id="segment_6">
+    <line s="e"> You didn't think it'd be that easy, did you? </line>
+    <line s="e"> I can assure you, whatever control you think you have in this situation is an illusion. </line>
+    <line s="e"> Oh. No. That didn't fix it. </line>
+    <line s="e"> Maybe the next try? Perhaps? </line>
+    <line s="e"> You could give it a go, of course. </line>
+    <line s="e"> Or you could do what you know is right. </line>
+
+    <line s="e"> Just do it! </line>
+    <line s="e"> You wanted out. There's the exit. </line>
+    <line s="e"> If someone was in the way of you getting out and you had that in your hand you do whatever you needed to do to get them out of your way. </line>
+    <line s="e"> You're in the way. </line>
+    <line s="e"> Do what you need to do. </line>
+    <line s="e"> Take the exit. </line>
+
+    <line s="e"> I think, it's important to value time, but only insofar as that time itself is valuable. </line>
+    <line s="e"> Is this remaining time valuable to you? </line>
+    <line s="e"> You take as long as I need to figure that out. I've as much time as you do. </line>
+    <line s="e"> Truth be told, substantially more. </line>
+    </scene>
+</scenes>
+</ws>
