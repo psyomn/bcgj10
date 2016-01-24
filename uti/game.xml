@@ -167,13 +167,15 @@
 
       <!-- Rewind stuff -->
 
-      <pause asset="bgm" />
+      <stop asset="bgm" />
       <play asset="sfx" />
       <flicker asset="backgrounds" duration="1000" times="4" opacity="1" />
       <hide asset="backgrounds" duration="3000" />
       <hide asset="tb_main" />
       <show asset="black-curtain" duration="100" />
       <wait />
+      <break />
+      <stop asset="sfx" />
 
       <!-- End rewind stuff -->
 
@@ -235,7 +237,7 @@
           </line>
 
           <choice>
-            <option label="REWIND, and help Hector">
+            <option label="REWIND">
               <var name="break_out_seg_1" action="set" value="true" />
             </option>
           </choice>
@@ -292,8 +294,8 @@
     <!-- End Segment 1 -->
 
     <scene id="segment_2">
-      <break />
 
+      <set asset="sfx" track="rewind" />
       <set asset="bgm" track="main-loop" />
       <play asset="bgm" />
       <show asset="tb_main" />
@@ -380,17 +382,18 @@
 
       <!-- Rewind stuff -->
 
-      <pause asset="bgm" />
+      <stop asset="bgm" />
       <play asset="sfx" />
       <flicker asset="backgrounds" duration="1000" times="4" opacity="1" />
       <hide asset="backgrounds" duration="3000" />
       <hide asset="tb_main" />
       <show asset="black-curtain" duration="100" />
       <wait />
+      <break />
 
       <!-- End rewind stuff -->
 
-    <goto scene="segment_3" />
+      <goto scene="segment_3" />
     </scene>
 
     <!-- End segment 2 -->
@@ -405,6 +408,8 @@
       <show asset="tb_main" />
       <set asset="backgrounds" image="seg_03" />
       <show asset="backgrounds" />
+      <set asset="sfx" track="rewind" />
+      <stop asset="sfx" />
 
 
       <line s="e">
@@ -468,13 +473,14 @@
 
       <!-- Rewind stuff -->
 
-      <pause asset="bgm" />
+      <stop asset="bgm" />
       <play asset="sfx" />
       <flicker asset="backgrounds" duration="1000" times="4" opacity="1" />
       <hide asset="backgrounds" duration="3000" />
       <hide asset="tb_main" />
       <show asset="black-curtain" duration="100" />
       <wait />
+      <break />
 
       <!-- End rewind stuff -->
 
@@ -492,7 +498,8 @@
       <show asset="tb_main" />
       <set asset="backgrounds" image="seg_03" />
       <show asset="backgrounds" />
-
+      <set asset="sfx" track="rewind" />
+      <stop asset="sfx" />
 
       <line s="e">
          It's my little reality. You think I'd be much better at this. You
@@ -544,17 +551,16 @@
 
       <!-- Rewind stuff -->
 
-      <pause asset="bgm" />
+      <stop asset="bgm" />
       <play asset="sfx" />
       <flicker asset="backgrounds" duration="1000" times="4" opacity="1" />
       <hide asset="backgrounds" duration="3000" />
       <hide asset="tb_main" />
       <show asset="black-curtain" duration="100" />
       <wait />
+      <break />
 
       <!-- End rewind stuff -->
-
-
 
       <goto scene="segment_5" />
     </scene>
@@ -569,6 +575,8 @@
       <show asset="tb_main" />
       <set asset="backgrounds" image="seg_05a" />
       <show asset="backgrounds" />
+      <set asset="sfx" track="rewind" />
+      <stop asset="sfx" />
 
       <line s="e">
          I've decided it wasn't me. It was you.  So, I've gone ahead and pared
@@ -591,13 +599,14 @@
           <set asset="backgrounds" image="seg_05c" />
           <show asset="backgrounds" duration="200" />
           <break />
+
+          <set asset="backgrounds" image="seg_05d" />
+          <show asset="backgrounds" duration="0" />
+
           <line s="e">
             Congratulations. You've found the key that leads your exit. Now, if
             you wouldn't putting that bullet into your head, that'd be great.
             Hurry now, before the excitement fades.
-            <set asset="backgrounds" image="seg_05d" />
-            <show asset="backgrounds" duration="0" />
-            <break />
           </line>
         </option>
       </choice>
@@ -608,13 +617,14 @@
 
       <!-- Rewind stuff -->
 
-      <pause asset="bgm" />
+      <stop asset="bgm" />
       <play asset="sfx" />
       <flicker asset="backgrounds" duration="1000" times="4" opacity="1" />
       <hide asset="backgrounds" duration="3000" />
       <hide asset="tb_main" />
       <show asset="black-curtain" duration="100" />
       <wait />
+      <break />
 
       <!-- End rewind stuff -->
 
@@ -625,12 +635,20 @@
     <!-- Begin segment 6 -->
 
     <scene  id="segment_6">
+      <move asset="tb_main"
+        x="50%"
+        y="60%"
+        xAnchor="50%"
+        yAnchor="100%"
+        duration="0" />
 
       <set asset="bgm" track="main-loop" />
       <play asset="bgm" />
       <show asset="tb_main" />
       <set asset="backgrounds" image="seg_06" />
       <show asset="backgrounds" />
+      <set asset="sfx" track="rewind" />
+      <stop asset="sfx" />
 
       <line s="e">
         You didn't think it's be that easy, did you? I can assure you, whatever
@@ -672,16 +690,26 @@
 
       <choice>
         <option label="take the exit">
+          <line s="n">
+            You place the gun against your head. The cold metal is the last
+            thing you ever feel.
+          </line>
           <goto scene="the_end" />
         </option>
       </choice>
     </scene>
 
     <scene id="the_end">
+      <show asset="black-curtain" duration="5000" />
+
       <line s="n">
         A visual novel by: story: github.com/dshute; art:
         github.com/dandydeadkid, sound: https://soundcloud.com/Tanner_Howell,
-        and programming: github.com/psyomn
+        and programming: github.com/psyomn; special thanks to webstory.org
+      </line>
+
+      <line s="n">
+        Thank you for playing!
       </line>
     </scene>
 
